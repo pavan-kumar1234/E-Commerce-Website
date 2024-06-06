@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Home Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+	justify-content:center;
+}
+.video-background{
+        position:fixed;
+        right:0;
+        bottom:0;
+        min-width:100%;
+        min-height: 100%;
+        z-index:-1;
+  }
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+	padding:20px;
+	
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.product {
+    max-width:100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width:100%;
+	position:relative;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 18px;
+    color: #555;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+    </style>
+</head>
+<body>  
+</head>
+<body>
+<video autoplay muted loop class="video-background">
+        <source src="https://www.shutterstock.com/shutterstock/videos/1066420345/preview/stock-footage-big-city-business-partners-use-tablet-computer-on-crowded-street-e-commerce-visualization-of.webm">
+        Your browser dose not support the video tag.
+		</video>
+ <h1>Wellcome To Royal Enfield </h1>
+ <ul>
+ <li><a href="#RE Classic 350" class="link">RE Classic 350</a></li>
+ <li><a href="#GT 650" class="link">GT 650</a></li>
+ <li><a href="#Interceptor 650" class="link">Interceptor 650</a></li>
+ <li><a href="#Bullet" class="link">Bullet</a></li>
+ <li><a href="#Hunter 350" class="link">Hunter 350</a></li>
+ </ul>
+ <div class="nav-bottom">
+      <a href="cartpage.html">Cart</a>
+	  </div>
+	  
+    <div class="container">
+        <h2>Featured Products</h2>
+		<div>
+        <div class="product" id="RE Classic 350">
+		<img src= "https://imgd.aeplcdn.com/1280x720/n/cw/ec/101487/classic-350-2021-right-front-three-quarter-4.jpeg?isig=0.jgp "width="200"height="280" alt="RE Classic 350">         
+        <h2>RE Classic 350</h2>
+            <p>Price: $80.99</p>
+			<button onclick="Buy('RE Classic 350')"> Buy </button>
+			<button onclick="addToCart('RE Classic 350')"> Add to cart </button>
+		</div>	
+		<div>
+        <div class="product" id="GT 650">
+		<img src="https://www.baakmotocyclettes.com/9811-large_default/royal-enfield-650-continental-gt-racer.jpg.jpg" width="200"height="280" alt="GT 650"> 
+		<h2>GT 650</h2>
+            <p>Price: $120.99</p>
+			<button onclick="Buy('GT 650')"> Buy </button>
+			<button onclick="addToCart('GT 650')"> Add to cart </button>
+            
+        </div>
+       <div class="product" id="Interceptor 650">
+	  <img src=" https://motocentral.in/cdn/shop/files/Royal-Enfield-Crash-Guard-4_1024x1024.png?v=1694439967.jpg"width="200" height="250" alt ="Interceptor 650">
+            <h2>Interceptor 650</h2>
+			<p>Price: $110.99</p>
+			<button onclick="Buy('Interceptor 650')"> Buy </button>
+			<button onclick="addToCart('Interceptor 650')"> Add to cart </button>
+		</div>	
+			<div class="product" id="Bullet">
+	  <img src=" https://imgd.aeplcdn.com/664x374/n/cw/ec/127499/bullet-right-front-three-quarter-3.jpeg?isig=0&q=80.jpg"width="200" height="250" alt ="Bullet">
+            <h2>Bullet</h2>
+			<p>Price: $90.99</p>
+			<button onclick="Buy('Bullet')"> Buy </button>
+			<button onclick="addToCart('Bullet')"> Add to cart </button>
+        </div>
+		 <div class="product" id="Hunter 350">
+		 <img src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcms%2Farticles%2F3201199%2FRoyal_Enfield_Hunter_350_1_2022_08_05_T03_41_40_503_Z_6ab6dc0960.png&w=3840&q=75.jpg" width="200" height="250" alt ="Hunter 350">
+		 <h2>Hunter 350</h2>
+            <p>Price: $85.99</p>
+			<button onclick="Buy('Hunter 350')"> Buy </button>
+			<button onclick="addToCart('Hunter 350')"> Add to cart </button>
+        </div>
+	</div>
+	<script>
+	function addToCart(product) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(product + ' has been added to the cart.');
+        }
+		function checkLoginStatus() {
+            const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+            if (!loggedIn) {
+                window.location.href = 'index.html';
+            }
+        }
+	
+	
+	</script>
+</body>
+</html>
